@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "articles",
+  "collectionName": "jerseys",
   "info": {
-    "singularName": "article",
-    "pluralName": "articles",
-    "displayName": "Article",
+    "singularName": "jersey",
+    "pluralName": "jerseys",
+    "displayName": "Jersey",
     "description": ""
   },
   "options": {
@@ -12,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true,
-      "maxLength": 80
-    },
     "image": {
       "type": "media",
       "multiple": false,
@@ -25,8 +20,8 @@
         "images"
       ]
     },
-    "content": {
-      "type": "richtext",
+    "name": {
+      "type": "string",
       "required": true
     }
   }
