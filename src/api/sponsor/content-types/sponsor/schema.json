@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sponsors",
+  "info": {
+    "singularName": "sponsor",
+    "pluralName": "sponsors",
+    "displayName": "Sponsor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sponsorType": {
+      "type": "enumeration",
+      "enum": [
+        "jerseySponsor",
+        "officialCar",
+        "stageSponsor",
+        "hostBroadcaster",
+        "officialPartner",
+        "officialSupplier",
+        "institutionalPartner"
+      ],
+      "default": "jerseySponsor",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
